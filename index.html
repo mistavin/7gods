@@ -47,9 +47,36 @@
         </div>
     </header><!-- End Header -->
 
-    <div class="mobile-nav">
-        
+    <div class="nav-container">
+        <div class="container">
+            <div class="item">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="7gods Logo">
+                </div>
+    
+                <div class="icon-links">
+                    <img src="assets/images/coins.png"  alt="coins">
+                    <img src="assets/images/twitter.png" alt="twitter">
+                    <img src="assets/images/telegram.png" alt="telegram">
+                    <img src="assets/images/dex-screener.png" alt="dex-screener">
+                </div>
+    
+                <div class="menu-toggle">
+                    <i class="toggle-icon">≡</i>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+
     <!-- =========== Hero SECTION ========== -->
     <div id="hero" class="hero relative">
         <div class="container container-xxl">
@@ -67,7 +94,7 @@
                         where luck and wealth arise! Each of these deities have different origins, stories, and
                         virtues that all tie them down to a common theme : prosperity!
                     </p>
-                    <div class="flex gap-12 mb-6">
+                    <div class="hero-button">
                         <a href="" class="text-[#000000] w-fit py-1 px-2 bg-[#6AEB5E] border border-white focus:outline-none font-bold rounded-[3px] text-sm md:text-sm">
                             Buy $7gods
                         </a>
@@ -372,7 +399,7 @@
                     <div class="item">
                         <div class="content">
                             <p class="title">1. Create a wallet</p>
-                            <p class="text">Download Phantom or your preferred Solana wallet from the 
+                            <p class="text">Download Phantom or your preferred Solana wallet from the
                                 App Store or Google Play for free. <br>
                                 If you're on a desktop, install the Phantom Chrome extension from their official website.
                             </p>
@@ -382,7 +409,7 @@
                             <p class="title">2. Get some SOL</p>
                             <p class="text">You'll need SOL in your wallet to swap for $7gods.<br>
                                 Buy SOL directly on Phantom. Transfer from another wallet.<br>
-                                Purchase SOL on an exchange (like Binance or Coinbase) and 
+                                Purchase SOL on an exchange (like Binance or Coinbase) and
                                 send it to your Phantom wallet.
                             </p>
                         </div>
@@ -417,7 +444,7 @@
     </section>
 
     <!-- =========== FOOTER SECTION ========== -->
-     <section class="footer">
+    <section class="footer">
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">about</a></li>
@@ -425,7 +452,7 @@
             <li><a href="#roadmap">roadmap</a></li>
             <li><a href="#buy">buy token</a></li>
         </ul>
-        
+
         <div class="flex gap-4 items-center">
             <img src="assets/images/coins.png" class="w-9 h-7" alt="coins">
             <img src="assets/images/twitter.png" class="w-7 h-5 object-fill" alt="twitter">
@@ -436,7 +463,7 @@
         <div class="copyright">
             <p>© 2025 by MemeKing</p>
         </div>
-     </section>
+    </section>
 
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
@@ -470,6 +497,18 @@
                 $successMessage.classList.add('hidden');
             }
         })
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const mobileMenu = document.querySelector(".mobile-menu");
+
+            menuToggle.addEventListener("click", () => {
+                mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+            });
+        });
 
     </script>
 
