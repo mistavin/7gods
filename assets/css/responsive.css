@@ -1,0 +1,11 @@
+@media (max-width: 760px) {
+  /* .hero-img {
+    width: 95%;
+    height: 350px;
+    margin-left: -4rem;
+  } */
+
+  .header {
+    display: none !important;
+  }
+}
