@@ -229,7 +229,6 @@ body.active {
 }
 
 
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -238,6 +237,8 @@ body.active {
     position: fixed;
     left: 0;
     top: 0;
+    display: flex;
+    align-items: center;
     right: 0;
     transition: all 0.5s;
     z-index: 997;
@@ -492,6 +493,12 @@ body.active {
     margin-top: 1.5rem;
 }
 
+.hero .connect {
+    display: flex; 
+    gap: 1rem; 
+    align-items: center;
+}
+
 .hero .hero-button {
     display: flex;
     gap: 3rem;
@@ -545,7 +552,7 @@ body.active {
         0 0 100px 50px rgba(255, 158, 0, 1);
 }
 
-.hero .content {
+.hero .copyToClip {
     width: 60%;
     margin: 0rem auto 3rem;
 }
@@ -576,7 +583,6 @@ body.active {
 
 .tokenomics .image {
     margin-top: -5.625rem;
-
 }
 
 .tokenomics .image img {
@@ -624,10 +630,12 @@ body.active {
     margin: 72px 0;
 }
 
+
+
 .tokenomics .box {
-    width: 169px;
+    width: 10.46rem;
     background: rgba(17, 85, 11, 0.4);
-    height: 113px;
+    height: 7.06rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -668,8 +676,7 @@ body.active {
     font-family: 'Inter';
     font-weight: 600;
     display: flex;
-    align-items: first baseline;
-    /* flex-wrap: nowrap; */
+    align-items: baseline;
     gap: 5px;
     line-height: 1.7rem;
 }
@@ -793,13 +800,12 @@ body.active {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* max-height: 400px; */
     z-index: -1;
 }
 
 .roadmap .water img {
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 .roadmap .boat {
     width: 100%;
@@ -820,6 +826,7 @@ body.active {
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(90deg, #6AEB5E 00%, #FDD800 78%);
 }
+
 .roadmap .background1 {
     background: #000000;
 }
@@ -893,7 +900,6 @@ body.active {
     font-size: 2.8rem;
     font-family: 'inter';
     font-weight: 800;
-    
 }
 
 .buy-token .item {
@@ -920,7 +926,6 @@ body.active {
 
 .buy-token img {
     height: fit-content;
-
 }
 
 
@@ -931,7 +936,6 @@ body.active {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-
 }
 
 .footer ul {

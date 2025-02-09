@@ -55,10 +55,8 @@
     text-decoration: none;
 }
 
-@media (min-width: 250px) and (max-width: 760px) {
-
-
-    .header {
+@media (max-width: 767px) {
+    #header {
         display: none;
     }
 
@@ -115,10 +113,226 @@
             0 0 80px 50px rgba(255, 158, 0, 0.1);
     }
 
+    .hero .connect {
+        display: none;
+    }
+
+    .hero .copyToClip {
+        width: 100%;
+        margin: 0rem auto 1rem;
+    }
+
+    /*--------------------------------------------------------------
+        # About Section
+    --------------------------------------------------------------*/
+    .about .about-title {
+        font-size: 1.6rem;
+    }
+
+    .about .about-content {
+        font-size: 0.6rem;
+        margin-top: 0.7rem;
+    }
+
+    /* tokenomics */
+    .tokenomics {
+        padding: 2rem 0 0;
+    }
+
+    .tokenomics .section-subtitle {
+        font-weight: 800;
+        font-size: 1.1rem;
+    }
+
+    .tokenomics .image {
+        margin-top: 0;
+        display: none;
+    }
+    .tokenomics .box-content {
+        margin: 1rem 0;
+        display: flex;
+    }
+
+    .tokenomics .box {
+        width: 8rem;
+        height: 5.5rem;
+    }
+    /* .tokenomics .image-mobile {
+        
+    } */
+
+    .tokenomics .token-list {
+        margin-top: 1.5rem;
+    }
+
+    .tokenomics .token-list li {
+        font-size: 0.9rem;
+    }
+    
+    .tokenomics .token-list span {
+        font-size: 0.9rem;
+    }
+
+    /* piechart */
+    .pie-chart {
+        padding-bottom: 1.5rem;
+    }
+    .pie-chart .item {
+        height: 23.25rem;
+    }
+    .pie-chart p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .pie-chart .pre-sale {
+        margin: 1rem 0 0;
+    }
+    
+    .pie-chart .pre-sale h2 {
+        font-size: 1rem;
+        margin: 0 0 1rem;
+    }
+
+    .pie-chart .pre-sale h3 {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .pie-chart .col-2-item {
+        margin-top: 0.3rem;
+        /* height: 500px; */
+    }
+
+    /* ecosystem */
+    .ecosystem .eco-heading {
+        font-size: 1.3rem;
+    }
+
+    .ecosystem .sub-eco-title {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        text-align: center;
+    }
+
+    .ecosystem .item-list li {
+        margin-bottom: 1.1rem;
+        font-size: 0.7rem;
+    }
+    
+    .ecosystem .item-list span {
+        font-size: 0.7rem;
+    }
+
+
+    /* RoadMap */
+    .roadmap {
+        padding: 2.5rem 1rem ;
+        background-color: #4E9DA0;
+    }
+    .roadmap .water {
+        position: absolute;
+        top: 25%;
+    }
+
+    .roadmap h2.header {
+        font-size: 3rem;
+        text-align: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(90deg, #6AEB5E 00%, #FDD800 78%);
+    }
+    .roadmap h1 {
+       display: none;
+    }
+
+    .roadmap .item {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .roadmap .item .column {
+        width: 46%;
+        flex: 0 0 auto;
+        margin: 0  0 10px 10px;
+    }
+
+    .roadmap .item .content h2 {
+        font-size: 0.6rem;
+    }
+
+    .roadmap .item .content ul li {
+        margin-bottom: 0.1rem;
+        font-size: 0.4rem;
+    }
+
+    /* buytoken */
+    .buy-token {
+        padding: 3.17rem 0 0;
+    }
+
+    .buy-token h1 {
+        font-size: 1.75rem;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+
+    .buy-token img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .buy-token .item .content {
+        text-align: center;
+    }
+
+    .buy-token .item .title {
+        font-size: 0.7rem;
+    }
+    .buy-token .item .text {
+        font-size: 0.7rem;
+        line-height: 20px;
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 1.6rem 0 0;
+        gap: 1.5rem;
+    }
+
+    .footer ul li {
+        white-space: nowrap;
+        padding: 0;
+    }
+    
+
+    .footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer ul li a {
+        display: flex;
+        font-size: 13px;
+        padding: 6px 15px;
+        text-transform: uppercase;
+    }
 }
 
-@media (min-width: 761px) {
+@media (min-width: 768px) {
     .nav-container {
         display: none;
     }
+    .tokenomics .image-mobile {
+        display: none;
+    }
+
+    .roadmap h2.header {
+        display: none;
+     }
 }
