@@ -182,13 +182,13 @@
     --bs-form-invalid-border-color: #ea868f;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
+.containers,
+.containers-fluid,
+.containers-xxl,
+.containers-xl,
+.containers-lg,
+.containers-md,
+.containers-sm {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
@@ -200,50 +200,50 @@
 
 @media (min-width: 576px) {
 
-    .container-sm,
-    .container {
+    .containers-sm,
+    .containers {
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
 
-    .container-md,
-    .container-sm,
-    .container {
+    .containers-md,
+    .containers-sm,
+    .containers {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
 
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
+    .containers-lg,
+    .containers-md,
+    .containers-sm,
+    .containers {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
 
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
+    .containers-xl,
+    .containers-lg,
+    .containers-md,
+    .containers-sm,
+    .containers {
         max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px) {
 
-    .container-xxl,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
+    .containers-xxl,
+    .containers-xl,
+    .containers-lg,
+    .containers-md,
+    .containers-sm,
+    .containers {
         max-width: 1320px;
     }
 }
@@ -3412,13 +3412,13 @@ fieldset:disabled .btn {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-sm,
-.navbar>.container-md,
-.navbar>.container-lg,
-.navbar>.container-xl,
-.navbar>.container-xxl {
+.navbar>.containers,
+.navbar>.containers-fluid,
+.navbar>.containers-sm,
+.navbar>.containers-md,
+.navbar>.containers-lg,
+.navbar>.containers-xl,
+.navbar>.containers-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
