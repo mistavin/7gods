@@ -857,7 +857,7 @@ body.active {
     background-image: linear-gradient(#000000, #00769B);
 }
 
-.roadmap .item .row {
+.roadmap .item .rows {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
