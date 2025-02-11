@@ -205,6 +205,14 @@
         /* height: 500px; */
     }
 
+    .pie-chart .col-2-item img {
+        width: 100%;
+        object-fit: cover;
+        -o-object-fit: cover;
+        margin-left: 0;
+        height: auto;
+    }
+
     /* ecosystem */
     .ecosystem .eco-heading {
         font-size: 1.3rem;

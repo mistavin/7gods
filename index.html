@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src='https://terminal.jup.ag/main-v3.js'></script>
     <title>7gods</title>
 </head>
 
@@ -165,7 +167,7 @@
                 <h2 class="section-subtitle" data-aos="fade-down">Tokenomics & Distribution</h2>
             </div>
             <div class="row">
-                <div class="col-md-5 col-lg-5 order-0 order-md-1"  data-aos="fade-left">
+                <div class="col-md-5 col-lg-5 order-0 order-md-1" data-aos="fade-left">
                     <div class="image">
                         <img class="animated" src="assets/images/holding-token.png" alt="hero-header" />
                     </div>
@@ -221,9 +223,9 @@
                         <div class="setup-phase">
                             <h2 class="">Setup Phase (Before Pre-Sale):</h2>
                             <div class="">
-                                <p><span class="dot"></span> Network creation</p>
-                                <p><span class="dot"></span>Website development</p>
-                                <p><span class="dot"></span>Setup socials</p>
+                                <p> <span class="dot"></span>Website development</p>
+                                <p> <span class="dot"></span>Setup socials</p>
+                                <p> <span class="dot"></span> Network creation</p>
                             </div>
                         </div>
                         <div class="pre-sale">
@@ -231,10 +233,10 @@
                             <div class="post-launch">
                                 <h3>Post-Launch Growth Initiatives: (Continued artwork creation)</h3>
                                 <div class="">
-                                    <p><span class="dot"></span> Marketing boosts</p>
-                                    <p><span class="dot"></span> DEX trending promotions</p>
-                                    <p><span class="dot"></span> Listing</p>
-                                    <p><span class="dot"></span> Additional growth strategies</p>
+                                    <p> <span class="dot"></span> Marketing boosts</p>
+                                    <p> <span class="dot"></span> DEX trending promotions</p>
+                                    <p> <span class="dot"></span> Listing</p>
+                                    <p> <span class="dot"></span> Additional growth strategies</p>
                                 </div>
                             </div>
                         </div>
@@ -249,16 +251,40 @@
             </div>
             <div class="staking-pool">
                 <h2>30% – Staking Pool Rewards:</h2>
+                <div class="space-y-1">
+                    <div class="items">
+                        <p class="dot !w-4 h-3"></p>
+                        <p class="">Holders staking their tokens earn daily rewards, the more
+                            tokens are staked by the community the lower the overall selling pressure on the token,
+                            benefiting every single holder’s investment in $7GODS and encouraging steady growth of
+                            the project.
+                        </p>
+                    </div>
+                    <div class="items">
+                        <p class="dot"></p>
+                        <p class="">Directly goes to holders staking their tokens – No middle man</p>
+                    </div>
+                    <div class="items">
+                        <p class="dot"></p>
+                        <p class="">Rewards can be claimed as soon as 48hrs after the launch.</p>
+                    </div>
+                    <div class="items">
+                        <p class="dot"></p>
+                        <p class="">Unstaking cool down period of 6 hours (Tokens can be redeposited in your wallet 6 hours after you unstake them)</p>
+                    </div>
+                </div>
+                <!-- <ul>
+                    <li><i class="bi bi-dot"></i> Holders staking their tokens earn daily rewards, the more
+                        tokens are staked by the community the lower the overall selling pressure on the token,
+                        benefiting every single holder’s investment in $7GODS and encouraging steady growth of
+                        the project.
+                    </li>
+                    <li><i class="bi bi-dot"></i> Directly goes to holders staking their tokens – No middle man</li>
+                    <li> <i class="bi bi-dot"></i> Rewards can be claimed as soon as 48hrs after the launch</l>
+                    <li> <i class="bi bi-dot"></i> Unstaking cool down period of 6 hours (Tokens can be redeposited in your wallet 6 hours after you unstake them)</p>
+                </ul> -->
 
-                <p>
-                    <span class="dot"></span><span class="mr-1">Holders staking their tokens earn daily rewards, the more
-                    tokens are staked by the community the lower the overall selling pressure on the token,
-                    benefiting every single holder’s investment in $7GODS and encouraging steady growth of
-                    the project.</span>
-                </p>
-                <p><span class="dot"></span> Directly goes to holders staking their tokens – No middle man</p>
-                <p><span class="dot"></span> Rewards can be claimed as soon as 48hrs after the launch</p>
-                <p><span class="dot"></span> Unstaking cool down period of 6 hours (Tokens can be redeposited in your wallet 6 hours after you unstake them)</p>
+
 
             </div>
         </div>
@@ -448,7 +474,21 @@
 
     <!-- =========== Market SECTION ========== -->
     <section class="market">
-        <img src="assets/images/market.png" class="" alt="">
+        <div class="row">
+            <div class="col-md-7">
+                <!-- <div class="tradingview-widget-container">
+                    <div id="tradingview_chart"></div>
+                </div> -->
+                <iframe src="https://dexscreener.com/solana/atzfinm3npctk7bqazrvbnyc4xute9cabhtz7a3lixgh?embed=1&theme=dark" width="100%" height="500" style="border:0;"></iframe>
+
+            </div>
+            <div class="col-md-5">
+                <!-- <iframe src="https://terminal.jup.ag/?embed=1&theme=dark&inputMint=So11111111111111111111111111111111111111112&outputMint=72h2cpj8YU7aUJW3NFMjxfqGTh6hXnUrovMC4gKqyFPM" width="100%" height="600" style="border:none;">
+                </iframe> -->
+                <div id="integrated-terminal" style="width: 400px; height: 568px;"></div>
+            </div>
+        </div>
+        <!-- <img src="assets/images/market.png" class="" alt=""> -->
     </section>
 
     <!-- =========== FOOTER SECTION ========== -->
@@ -478,6 +518,31 @@
     <script src="assets/js/flowbite.js"></script>
     <script src="assets/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/@jup-ag/terminal@latest"></script>
+
+    <script>
+        window.Jupiter.init({
+
+displayMode: "integrated",
+
+integratedTargetId: "integrated-terminal",
+
+endpoint: "https://api.mainnet-beta.solana.com",
+
+formProps: {
+
+  fixedOutputMint: true,
+
+  swapMode: "ExactIn",
+
+  initialOutputMint: "72h2cpj8YU7aUJW3NFMjxfqGTh6hXnUrovMC4gKqyFPM",
+
+},
+
+});
+    </script>
+
+
     <script>
 
         window.addEventListener('load', function () {
@@ -520,6 +585,7 @@
 
     </script>
 
+    
     <!-- 
     - ionicon link
   -->
