@@ -26,7 +26,7 @@
     <div class="top-effect"></div>
     <!-- ======= Header ======= -->
     <header id="header" class="header">
-        <div class="container container-xxl d-flex align-items-center">
+        <div class="container container-xxl d-flex align-items-center" data-aos="fade-down" data-aos-duration="1500">
             <div id="logo" class="me-auto">
                 <a href="index.html" class="scrollto">
                     <img src="assets/images/logo.png" alt="" title="">
@@ -81,21 +81,21 @@
     <!-- =========== Hero SECTION ========== -->
     <div id="hero" class="hero relative">
         <div class="container container-xxl">
-            <div class="row align-items-center">
+            <div class="row ">
                 <div class="col-md-5 order-0 order-md-1">
-                    <div class="flex items-center justify-center">
+                    <div class="flex" data-aos="zoom-out-left">
                         <img class="hero-img object-fill animated" src="assets/images/gods.png" alt="hero-header" />
                     </div>
                 </div>
-                <div class="col-md-7 text-md-start text-center">
-                    <h2 class="hero-title" data-aos="fade-right">The Crypto Blessing
-                        of Japan’s 7gods Awaits You.
+                <div class="col-md-7 text-md-start text-center" data-aos="fade-right">
+                    <h2 class="hero-title">The Crypto Blessing<br>
+                        of Japan’s 7gods<br> Awaits You.
                     </h2>
-                    <p class="hero-text font-bold text-xs text-white leading-5">Embark on a journey with $7GODS, The Seven Lucky Gods Of Japan,
+                    <p class="hero-text font-bold text-xs text-white leading-5" data-aos="fade-right" data-aos-delay="300">Embark on a journey with $7GODS, The Seven Lucky Gods Of Japan,
                         where luck and wealth arise! Each of these deities have different origins, stories, and
                         virtues that all tie them down to a common theme : prosperity!
                     </p>
-                    <div class="hero-button">
+                    <div class="hero-button" data-aos="fade-right">
                         <a href="" class="text-[#000000] w-fit py-1 px-2 bg-[#6AEB5E] border border-white focus:outline-none font-bold rounded-[3px] text-sm md:text-sm">
                             Buy $7gods
                         </a>
@@ -137,8 +137,10 @@
 
     <!-- =========== ABOUT SECTION ========== -->
     <div id="about" class="about">
-        <img src="assets/images/aboutImg.png" alt="about image">
-        <div class=" py-6 bg-gradient-to-r from-[#FDD80082] via-[#6AEB5E3B] to-[#6AEB5E3B]">
+        <div class="w-full" data-aos="fade-down">
+            <img src="assets/images/aboutImg.png" class="w-full object-cover" alt="about image">
+        </div>
+        <div class=" py-6 bg-gradient-to-r from-[#FDD80082] via-[#6AEB5E3B] to-[#6AEB5E3B]" data-aos="fade-up">
             <h1 class="about-title">About</h1>
             <div class="container container-xxl">
                 <div class="about-content">
@@ -160,15 +162,15 @@
     <div id="tokenomics" class="tokenomics">
         <div class="container container-xxl">
             <div class="text-center mb-4">
-                <h2 class="section-subtitle">Tokenomics & Distribution</h2>
+                <h2 class="section-subtitle" data-aos="fade-down">Tokenomics & Distribution</h2>
             </div>
             <div class="row">
-                <div class="col-md-5 col-lg-5 order-0 order-md-1" data-aos="fade-left" data-aos-delay="100">
+                <div class="col-md-5 col-lg-5 order-0 order-md-1"  data-aos="fade-left">
                     <div class="image">
                         <img class="animated" src="assets/images/holding-token.png" alt="hero-header" />
                     </div>
                 </div>
-                <div class="col-md-7 col-lg-7">
+                <div class="col-md-7 col-lg-7" data-aos="fade-right">
                     <ul class="token-list">
                         <li><span>Total supply:</span> 1 000 000 000 tokens</li>
                         <li><span>Locked and staked at launch:</span> 800 000 000 tokens (see progressive unlock schedule) </li>
@@ -213,8 +215,8 @@
     <!-- =========== pie-chart SECTION ========== -->
     <section class="pie-chart">
         <div class="container container-xxl">
-            <div class="row g-0">
-                <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-5">
                     <div class="item">
                         <div class="setup-phase">
                             <h2 class="">Setup Phase (Before Pre-Sale):</h2>
@@ -239,9 +241,9 @@
 
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="col-2-item">
-                        <img src="assets/images/chart.png" class="w-full object-cover" alt="">
+                        <img src="assets/images/chart.png" class="w-full object-contain" alt="">
                     </div>
                 </div>
             </div>
@@ -249,10 +251,10 @@
                 <h2>30% – Staking Pool Rewards:</h2>
 
                 <p>
-                    <span class="dot"></span>Holders staking their tokens earn daily rewards, the more
+                    <span class="dot"></span><span class="mr-1">Holders staking their tokens earn daily rewards, the more
                     tokens are staked by the community the lower the overall selling pressure on the token,
                     benefiting every single holder’s investment in $7GODS and encouraging steady growth of
-                    the project.
+                    the project.</span>
                 </p>
                 <p><span class="dot"></span> Directly goes to holders staking their tokens – No middle man</p>
                 <p><span class="dot"></span> Rewards can be claimed as soon as 48hrs after the launch</p>

@@ -233,10 +233,10 @@ body.active {
 # Header
 --------------------------------------------------------------*/
 #header {
-    height: 6rem;
-    position: fixed;
-    left: 0;
-    top: 0;
+    height: 6.1rem;
+    /* position: fixed; */
+    /* left: 0;
+    top: 0; */
     display: flex;
     align-items: center;
     right: 0;
@@ -250,12 +250,25 @@ body.active {
     height: 70px;
 }
 
+/* Define the animation */
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }  /* Rotate slightly to the right */
+    50% { transform: rotate(0deg); }  /* Back to center */
+    75% { transform: rotate(-5deg); } /* Rotate slightly to the left */
+    100% { transform: rotate(0deg); }  /* Back to center */
+}
+  
+
 #header #logo img {
     padding: 0;
     margin: 0;
     max-height: 3.75rem;
-}
+    display: block; /* Ensure it's treated as a block element */
+    animation: swing 5s ease-in-out infinite; /* Adjust speed here */
+    transform-origin: center top; /* Makes the swinging effect look natural */
 
+}
 
 .top-effect {
     position: absolute;
@@ -272,15 +285,8 @@ body.active {
         /* middle magenta */
         0 0 120px 50px rgba(43, 84, 39, 1);
     /* outer cyan */
+    z-index: -1;
 }
-
-
-/* @media (max-width: 540px) {
-  #header #logo img {
-    max-height: 2rem;
-    width: 6rem;
-  }
-} */
 
 
 
@@ -451,6 +457,7 @@ body.active {
 .hero {
     position: relative;
     padding: 2.0rem 0 0;
+    /* height: 100%; */
 }
 
 .hero .hero-title {
@@ -459,7 +466,7 @@ body.active {
     color: #FF9E00;
     margin-bottom: 1.5rem;
     position: relative;
-    width: 35rem;
+    width: 33rem;
     line-height: 3.57rem;
     font-family: "Inter";
     /* z-index: 1; */
@@ -489,8 +496,8 @@ body.active {
 
 
 .hero .hero-img {
-    width: 85%;
-    margin-top: 1.5rem;
+    width: 84%;
+    margin-top: -2rem;
 }
 
 .hero .connect {
@@ -538,19 +545,35 @@ body.active {
 
 .gradient-section {
     position: absolute;
-    bottom: -100px;
-    left: -150px;
-    /* right: -150px; */
+    bottom: -90px;
+    left: 0px;
+    right: -150px;
     width: 100%;
-    height: 20px;
+    height: 0px;
     border-radius: 50%;
-    background-color: rgba(253, 216, 0, 1);
+    background-color: linear-gradient(to top, rgba(253, 216, 0, 1), transparent);
     z-index: -1;
     box-shadow:
         0 0 190px 100px rgba(255, 158, 0, 1),
-        0 0 190px 100px rgba(253, 216, 0, 1),
-        0 0 100px 50px rgba(255, 158, 0, 1);
+        0 0 100px 50px rgba(253, 216, 0, 1),
+        0 0 10px 50px rgba(255, 158, 0, 1);
 }
+
+/* .gradient-section {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0px;
+    background: linear-gradient(to top, rgba(253, 216, 0, 1), transparent);
+    z-index: -1;
+    box-shadow:
+        0 0 190px 100px rgba(255, 158, 0, 1),
+        0 0 100px 50px rgba(253, 216, 0, 1),
+        0 0 50px 50px rgba(255, 158, 0, 1);
+} */
+
 
 .hero .copyToClip {
     width: 60%;
@@ -664,14 +687,14 @@ body.active {
 
 .pie-chart .item .setup-phase h2 {
     color: #000000;
-    font-size: 1.25rem;
+    font-size: 1.20rem;
     font-family: 'Inter';
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .pie-chart p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #000000;
     font-family: 'Inter';
     font-weight: 600;
@@ -695,7 +718,7 @@ body.active {
 
 .pie-chart .pre-sale h2 {
     color: #000000;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: 'Inter';
     font-weight: 700;
     margin: 0 0 2rem;
@@ -703,21 +726,21 @@ body.active {
 
 .pie-chart .pre-sale h3 {
     color: #000000;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: 'Inter';
     font-weight: 600;
 }
 
 .pie-chart .col-2-item {
     margin-top: 0.8rem;
-    /* height: 500px; */
 }
 
 .pie-chart .col-2-item img {
     width: 100%;
     object-fit: cover;
     -o-object-fit: cover;
-    max-height: 410px;
+    margin-left: -50px;
+    height: 440px;
 }
 
 /* .pie-chart .staking-pool p {
@@ -834,7 +857,7 @@ body.active {
     background-image: linear-gradient(#000000, #00769B);
 }
 
-.roadmap .item .rows {
+.roadmap .item .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
