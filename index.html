@@ -15,8 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+    <script src='https://terminal.jup.ag/main-v3.js' data-preload defer></script>
 
-    
+
     <title>7gods</title>
 </head>
 
@@ -319,7 +320,7 @@
                 </div>
             </div>
         </div>
-   
+
     </section>
 
     <!-- =========== Roadmap SECTION ========== -->
@@ -468,7 +469,8 @@
                     <iframe src="https://dexscreener.com/solana/atzfinm3npctk7bqazrvbnyc4xute9cabhtz7a3lixgh?embed=1&theme=dark" style="border:0; width: 100%; height: 35rem;"></iframe>
                 </div>
                 <div class="col-md-5">
-                    <div class="d-flex align-items-lg-center jupiter-iframe" id="integrated-terminal">
+                    <!-- <div class="d-flex align-items-lg-center jupiter-iframe" id="integrated-terminal"> -->
+                    <div class="" id="jupiter-terminal">
 
                     </div>
                 </div>
@@ -504,29 +506,36 @@
     <script src="assets/js/flowbite.js"></script>
     <script src="assets/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src='https://terminal.jup.ag/main-v3.js'></script>
-    <!-- <script src="https://unpkg.com/@jup-ag/terminal@latest"></script> -->
+
 
     <script>
-        window.Jupiter.init({
+        document.addEventListener("DOMContentLoaded", function () {
+            const jupiterTerminal = document.createElement('div')
+            jupiterTerminal.id = 'jupiter-terminal'
+            document.body.appendChild(jupiterTerminal)
 
-            displayMode: "integrated",
+            window.Jupiter.init({
 
-            integratedTargetId: "integrated-terminal",
+                displayMode: "integrated",
 
-            endpoint: "https://api.mainnet-beta.solana.com",
-            
+                integratedTargetId: "jupiter-terminal",
 
-            formProps: {
+                endpoint: "https://polished-delicate-sponge.solana-devnet.quiknode.pro/5c4ba540c917050974f990ff5ff95354bb2abe64",
 
-                fixedOutputMint: true,
 
-                swapMode: "ExactIn",
+                formProps: {
 
-                initialOutputMint: "72h2cpj8YU7aUJW3NFMjxfqGTh6hXnUrovMC4gKqyFPM",
+                    fixedOutputMint: true,
 
-            },
+                    fixedInputMint: true,
 
+                    swapMode: "ExactIn",
+
+                    initialOutputMint: "72h2cpj8YU7aUJW3NFMjxfqGTh6hXnUrovMC4gKqyFPM",
+
+                },
+
+            });
         });
     </script>
 
