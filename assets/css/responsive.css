@@ -333,6 +333,7 @@
     }
 }
 
+
 @media (min-width: 768px) {
     .nav-container {
         display: none;
@@ -344,4 +345,69 @@
     .roadmap h2.header {
         display: none;
      }
+}
+
+@media only screen and (max-width: 1280px) {
+    .hero .hero-title {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .hero .hero-img {
+        width: 75%;
+        margin-top: -2rem;
+    }
+
+    .gradient-section {
+        bottom: -20px;
+        /* box-shadow:
+            0 0 250px 100px rgba(255, 158, 0, 1),
+            0 0 80px 80px rgba(253, 216, 0, 1),
+            0 0 10px 0px rgba(255, 158, 0, 1); */
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .roadmap .item h1 {
+        font-size: 3.8rem;
+       
+    }
+
+    .ecosystem .item {
+        margin: 2rem 0 0;
+    }
+
+    .ecosystem .item-list li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .ecosystem .item-list span {
+        font-size: 1rem;
+    }
+
+    .roadmap .item .column {
+        width: 30%;
+        height: 200px;
+    }
+
+    .roadmap .item .content ul li {
+        margin-bottom: 0.1rem;
+        font-size: 0.5rem;
+    }
+    
+    .roadmap .boat {
+        width: 90%;
+    }
+
+    .roadmap .item {
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    .roadmap .water {
+        bottom: -40px;
+    }
 }

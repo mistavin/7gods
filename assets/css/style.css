@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+
 :root {
 
     /**
@@ -501,12 +516,12 @@ body.active {
 
 .hero .hero-title {
     font-weight: 700;
-    font-size: 3.3rem;
+    font-size: 4rem;
     color: #FF9E00;
     margin-bottom: 1.5rem;
     position: relative;
-    width: 33rem;
-    line-height: 3.57rem;
+    width: 40rem;
+    line-height: 4.57rem;
     font-family: "Inter";
     /* z-index: 1; */
 }
@@ -531,11 +546,12 @@ body.active {
 .hero .hero-text {
     width: 55%;
     margin-bottom: 2.1rem;
+    font-weight: 500;
 }
 
 
 .hero .hero-img {
-    width: 80%;
+    width: 100%;
     margin-top: -2rem;
 }
 
@@ -550,6 +566,7 @@ body.active {
     gap: 3rem;
     margin-bottom: 1.5rem;
 }
+
 @keyframes up-down {
     0% {
         transform: translateX(10px);
@@ -563,6 +580,7 @@ body.active {
 .hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
 /* @keyframes glow {
     0% {
         box-shadow: 0 0 10px 5px rgba(255, 158, 0, 0.7);
@@ -581,7 +599,8 @@ body.active {
     position: absolute;
     bottom: 70px;
     left: 0px;
-    /* height: 40px; */
+    right: 0;
+    height: 0px;
     width: 100%;
     border-radius: 50%;
     background-image: linear-gradient(to right, rgba(253, 216, 0, 1), transparent);
@@ -603,7 +622,7 @@ body.active {
 # About Section
 --------------------------------------------------------------*/
 .about {
-    margin-top: 2rem;
+    width: 100%;
 }
 .about .about-title {
     font-size: 3rem;
@@ -615,6 +634,8 @@ body.active {
     font-size: 1.3rem;
     text-align: center;
     font-family: "Inter";
+    line-height: 2rem;
+    font-weight: 400;
 }
 
 /*--------------------------------------------------------------
@@ -642,9 +663,9 @@ body.active {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.5rem;
     font-family: "Inter";
 }
 
@@ -766,8 +787,8 @@ body.active {
     width: 100%;
     object-fit: cover;
     -o-object-fit: cover;
-    margin-left: -40px;
-    max-height: 440px;
+    /* margin-left: 40px; */
+    /* max-height: 440px; */
 }
 
 .pie-chart .staking-pool h2 {
@@ -807,23 +828,24 @@ body.active {
 }
 
 .ecosystem .item {
-    margin: 1rem 0 0;
+    margin: 4.5rem 0 0;
 }
 
 .ecosystem .item-list {
     list-style: none;
     padding: 0;
+
 }
 
 .ecosystem .item-list li {
     margin-bottom: 1.2rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: "Inter";
 }
 
 .ecosystem .item-list span {
     color: #6AEB5E;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     float: inline-start;
     margin-right: 5px;
     font-weight: 700;
@@ -848,6 +870,7 @@ body.active {
     left: 0;
     width: 100%;
     z-index: -1;
+    overflow: hidden;
 }
 
 .roadmap .water img {
@@ -855,19 +878,20 @@ body.active {
     object-fit: cover;
 }
 
+
 .roadmap .boat {
-    width: 100%;
+    width: 80%;
     margin-top: 3rem;
     object-fit: cover;
 }
 
 .roadmap .item {
     width: 90%;
-    margin-top: 25px;
+    margin-top: 85px;
 }
 
 .roadmap .item h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 800;
     font-family: 'Inter';
     text-align: center;
@@ -875,7 +899,8 @@ body.active {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #6AEB5E 00%, #FDD800 78%);
+    background-image: linear-gradient(to right, #6AEB5E, #FDD800);
+    text-shadow: 5px 3px 8px rgba(253, 216, 0, 0.4);
 }
 
 .roadmap .background1 {
@@ -896,8 +921,9 @@ body.active {
 .roadmap .item .column {
     display: flex;
     width: 30%;
-    height: 170px;
-    justify-content: stretch;
+    height: 200px;
+    /* align-items: end; */
+    /* justify-content: stretch; */
     flex: 0 0 auto;
     margin: 0 0 20px 15px;
 }
@@ -915,6 +941,7 @@ body.active {
     padding: 0.2rem 1.2rem;
     text-align: center;
     width: fit-content;
+    margin-top: 5px;
     margin: auto;
     font-family: 'Inter';
     font-weight: 700;
@@ -926,7 +953,8 @@ body.active {
     color: #6AEB5E;
     font-family: 'Inter';
     font-weight: 700;
-    margin: 1.3rem 0 0.5rem;
+    margin-bottom: 3rem;
+    margin: 1.3rem 0 0.4rem;
 }
 
 .roadmap .item .content ul {
@@ -939,7 +967,7 @@ body.active {
 
 .roadmap .item .content ul li {
     margin-bottom: 0.1rem;
-    font-size: 0.45rem;
+    font-size: 0.6rem;
     font-family: "Inter";
     font-weight: 500;
 
@@ -953,6 +981,7 @@ body.active {
     padding: 7.17rem 0 0;
     position: relative;
     background-color: #000000;
+    z-index: 10;
 }
 
 .buy-token h1 {
@@ -963,6 +992,7 @@ body.active {
 
 .buy-token .item {
     margin-top: 3rem;
+
 }
 
 .buy-token .item .content {
@@ -970,44 +1000,53 @@ body.active {
 }
 
 .buy-token .item .title {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: 'Inter';
     font-weight: 500;
     color: #6AEB5E;
 }
 
 .buy-token .item .text {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: 'Inter';
     font-weight: 500;
     color: #FFFFFF;
     line-height: 25px;
 }
 
-.buy-token img {
-    height: fit-content;
+/* .buy-token .img-phone {
+   
+} */
+
+.buy-token .img-phone img {
+    height: 100%;
+    width: 100%;
     z-index: 2;
     margin-top: -80px;
+    margin-right: -15%;
+    overflow: hidden;
 }
 
 .buy-token .gradient {
-    /* position: absolute;
-    bottom: 1px;
-    left: 0px; */
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
     /* height: 40px; */
     width: 100%;
     /* border-radius: 50%; */
-    background-image: linear-gradient(to right, rgba(253, 216, 0, 1), transparent);
+    /* background-image: linear-gradient(to right, rgba(253, 216, 0, 1), transparent); */
     z-index: -1;
     box-shadow:
-        0 0 190px 50px rgba(255, 158, 0, 1),
-        0 0 80px 40px rgba(253, 216, 0, 1),
+        0 0 40px 40px rgba(253, 216, 0, 0.8),
+        0 0 60px 50px rgba(255, 158, 0, 1),
         0 0 10px 0px rgba(255, 158, 0, 1);
 }
 
 .market {
+    position: relative;
+    z-index: 10;;
     padding: 3.17rem 0;
-    /* background-color: #000000; */
+    background-color: #000000;
 }
 
 
@@ -1054,9 +1093,22 @@ body.active {
     width: 100%;
     text-align: center;
     padding: 0.8rem;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
     background-image: linear-gradient(to right, #6AEB5E, #FDD800);
 }
 
-.footer .copyright p {
+.footer .copyright span {
     color: #000000;
+}
+
+.footer .copyright a {
+    color: #000000;
+}
+
+.footer .copyright a.tel-link:hover {
+    color: #FDD800;
+
+    cursor: pointer;
 }
