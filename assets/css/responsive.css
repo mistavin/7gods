@@ -2,6 +2,19 @@
     height: 4rem;
     display: flex;
     align-items: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+#nav-container.nav-container-scrolled,
+#nav-container.nav-container-inner {
+    background: rgba(6, 12, 34, 0.98);
+    height: 70px;
 }
 
 .nav-container .item {
@@ -12,8 +25,10 @@
     z-index: 1000;
 }
 
-.logo img {
+.nav-container .logo img {
     width: 5rem;
+    animation: swing 5s ease-in-out infinite;
+    transform-origin: center top;
     /* margin-right: 8px; */
 }
 
@@ -56,7 +71,7 @@
     text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 993px) {
 
     /* @media screen and (min-width: 250px) and (max-width: 767px)  { */
     #header {
@@ -74,7 +89,7 @@
 
     /* hero */
     .hero {
-        padding: 0;
+        padding: 3.5rem 0 0;
         width: 100%;
     }
 
@@ -105,7 +120,7 @@
     }
 
     .hero .gradient-section {
-        top: 35%;
+        top: 40%;
         left: 0;
         width: 100%;
         height: 0px;
@@ -113,8 +128,8 @@
         background-color: rgba(253, 216, 0, 0.5);
         z-index: -1;
         box-shadow:
-            0 0 50px 50px rgba(255, 158, 0, 0.5),
-            0 0 50px 50px rgba(253, 216, 0, 0.3),
+            0 0 90px 80px rgba(255, 158, 0, 0.5),
+            0 0 90px 50px rgba(253, 216, 0, 0.3),
             0 0 80px 50px rgba(255, 158, 0, 0.5);
     }
 
@@ -312,6 +327,11 @@
         margin: 0 0 10px 10px;
     }
 
+    .roadmap .background2 {
+        background-image: none;
+        background-color: #000000;
+    }
+
     .roadmap .item .content h2 {
         font-size: 0.6rem;
         height: 33px;
@@ -319,7 +339,8 @@
 
     .roadmap .item .content ul li {
         margin-bottom: 0.1rem;
-        font-size: 0.4rem;
+        font-size: 0.41rem;
+        font-weight: bold;
     }
 
     /* buytoken */
@@ -339,7 +360,6 @@
     .buy-token .img-phone img {
         margin-top: 0;
         margin-right: 0;
-        overflow: hidden;
     }
 
     .buy-token .item .content {
@@ -356,8 +376,21 @@
     }
 
     .buy-token .gradient {
-        top: 51.5%;
-        bottom: 0;
+        display: none;
+    }
+
+    .buy-token .gradient-phone {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        /* height: 100px; */
+        z-index: -1;
+        box-shadow:
+            0 0 20px 30px rgba(253, 216, 0, 0.8),
+            0 0 10px 30px rgba(255, 158, 0, 1),
+            0 0 0px 0px rgba(255, 158, 0, 1);
+
     }
 
     .buy-token .jupiter-iframe {
@@ -397,7 +430,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 993px) {
     .nav-container {
         display: none;
     }
@@ -411,10 +444,31 @@
     }
 }
 
-/* @media (min-width: 1280px) { */
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tokenomics .box-content {
+        margin: 1rem 0;
+       
+    }
 
-@media screen and (min-width: 992px) and (max-width: 1280px) {
-    */ .hero .hero-title {
+    .tokenomics .box {
+        width: 12rem;
+        height: 8.5rem;
+    }
+
+    .tokenomics .token-list li {
+        font-size: 1rem;
+    }
+
+    .tokenomics .token-list span {
+        font-size: 1rem;
+    }
+}
+
+
+/* @media screen and (min-width: 992px) and (max-width: 1280px) { */
+@media (min-width: 993px) and (max-width: 1440px) {
+    .hero .hero-title {
         font-size: 3.5rem;
         line-height: 4rem;
     }
@@ -426,10 +480,7 @@
 
     .gradient-section {
         bottom: -20px;
-        /* box-shadow:
-            0 0 250px 100px rgba(255, 158, 0, 1),
-            0 0 80px 80px rgba(253, 216, 0, 1),
-            0 0 10px 0px rgba(255, 158, 0, 1); */
+       
     }
 
     .about {

@@ -1014,17 +1014,23 @@ body.active {
 } */
 
 .buy-token .img-phone img {
-    height: 100%;
+    /* height: 500px; */
     width: 100%;
     z-index: 2;
-    margin-top: -80px;
-    margin-right: -15%;
+    object-fit: cover;
+    /* margin-top: -80px; */
+    /* margin-right: -15%; */
     overflow: hidden;
+}
+
+.buy-token .gradient-phone {
+    display: none;
 }
 
 .buy-token .gradient {
     position: absolute;
-    bottom: 40px;
+    /* bottom: 40px; */
+    bottom: 0;
     left: 0px;
     /* height: 40px; */
     width: 100%;
@@ -1037,10 +1043,13 @@ body.active {
         0 0 10px 0px rgba(255, 158, 0, 1);
 }
 
-.buy-token .jupiter-iframe {
+.market .jupiter-iframe {
     border: 0;
     width: 100%;
-    height: 45rem;
+    height: fit-content;
+    /* height: 45rem;
+    align-items: center;
+    justify-content: center; */
 }
 
 

@@ -61,8 +61,16 @@
     let header = select('#header')
     let offset = header.offsetHeight
 
+    let headerNav = select('#nav-container')
+    let offsetNav = headerNav.offsetHeight
+
+
     if (!header.classList.contains('header-scrolled')) {
       offset -= 20
+    }
+
+    if (!headerNav.classList.contains('nav-container-scrolled')) {
+        offsetNav -= 20
     }
 
     let elementPos = select(el).offsetTop
@@ -87,50 +95,21 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+  
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
+  let selectMobileHeader = select('#nav-container')
+  if (selectMobileHeader) {
+    const headerMobileScrolled = () => {
       if (window.scrollY > 100) {
-        backtotop.classList.add('active')
+        selectMobileHeader.classList.add('nav-container-scrolled')
       } else {
-        backtotop.classList.remove('active')
+        selectMobileHeader.classList.remove('nav-container-scrolled')
       }
     }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
+    window.addEventListener('load', headerMobileScrolled)
+    onscroll(document, headerMobileScrolled)
   }
 
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function (e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function (e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
 
   /**
  * Animation on scroll function and init
@@ -164,18 +143,5 @@
     $("#preloder").delay(200).fadeOut("slow");
 
   });
-
-
-  /**
-   * Animation on scroll
-   */
-  // window.addEventListener('load', () => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     easing: 'ease-in-out',
-  //     once: true,
-  //     mirror: false
-  //   })
-  // });
 
 })()
