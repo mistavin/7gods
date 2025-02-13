@@ -226,6 +226,7 @@ body {
     font-size: 100%;
     line-height: 1.4;
     overflow-x: hidden;
+    position: relative;
 }
 
 body.active {
@@ -505,13 +506,9 @@ body.active {
 --------------------------------------------------------------*/
 
 .hero {
-    /* position: relative; */
-    padding: 7.5rem 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    position: relative;
+    padding: 7.5rem 0 2rem;
+    /* height: 100vh; */
 }
 
 .hero .hero-title {
@@ -553,6 +550,7 @@ body.active {
 .hero .hero-img {
     width: 100%;
     margin-top: -2rem;
+    overflow: hidden;
 }
 
 .hero .connect {
@@ -581,21 +579,8 @@ body.active {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-/* @keyframes glow {
-    0% {
-        box-shadow: 0 0 10px 5px rgba(255, 158, 0, 0.7);
-    }
 
-    50% {
-        box-shadow: 0 0 20px 10px rgba(255, 158, 0, 0.7);
-    }
-
-    100% {
-        box-shadow: 0 0 10px 5px rgba(255, 158, 0, 0.7);
-    }
-} */
-
-.gradient-section {
+.hero .gradient-section {
     position: absolute;
     bottom: 70px;
     left: 0px;
@@ -603,7 +588,7 @@ body.active {
     height: 0px;
     width: 100%;
     border-radius: 50%;
-    background-image: linear-gradient(to right, rgba(253, 216, 0, 1), transparent);
+    /* background-image: linear-gradient(to right, rgba(253, 216, 0, 1), transparent); */
     z-index: -1;
     box-shadow:
         0 0 250px 100px rgba(255, 158, 0, 1),
@@ -621,9 +606,21 @@ body.active {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+.about .img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .content {
+    background-image: linear-gradient(to right, rgba(253, 216, 0, 0.51), rgba(106, 235, 94, 0.23));
+}
+
 .about {
     width: 100%;
+    overflow: hidden;
 }
+
 .about .about-title {
     font-size: 3rem;
     text-align: center;
@@ -694,8 +691,6 @@ body.active {
 .tokenomics .box-content {
     margin: 72px 0;
 }
-
-
 
 .tokenomics .box {
     width: 11.46rem;
@@ -878,7 +873,6 @@ body.active {
     object-fit: cover;
 }
 
-
 .roadmap .boat {
     width: 80%;
     margin-top: 3rem;
@@ -921,7 +915,7 @@ body.active {
 .roadmap .item .column {
     display: flex;
     width: 30%;
-    height: 200px;
+    height: 220px;
     /* align-items: end; */
     /* justify-content: stretch; */
     flex: 0 0 auto;
@@ -953,7 +947,8 @@ body.active {
     color: #6AEB5E;
     font-family: 'Inter';
     font-weight: 700;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    height: 43px;
     margin: 1.3rem 0 0.4rem;
 }
 
@@ -1042,9 +1037,19 @@ body.active {
         0 0 10px 0px rgba(255, 158, 0, 1);
 }
 
+.buy-token .jupiter-iframe {
+    border: 0;
+    width: 100%;
+    height: 45rem;
+}
+
+
+
+/* MArket */
 .market {
     position: relative;
-    z-index: 10;;
+    z-index: 10;
+    ;
     padding: 3.17rem 0;
     background-color: #000000;
 }
