@@ -323,7 +323,11 @@
 
     .roadmap .item .column {
         width: 46.5%;
+<<<<<<< HEAD
         height: 170px;
+=======
+        height: 175px;
+>>>>>>> b58d753b138e68f6a57bf3b0da803fa5921e2440
         flex: 0 0 auto;
         margin: 0 0 10px 10px;
     }
@@ -892,6 +896,10 @@
     .roadmap .water {
         bottom: -40px;
     }
+<<<<<<< HEAD
 
     
 }
+=======
+}
+>>>>>>> b58d753b138e68f6a57bf3b0da803fa5921e2440
