@@ -76,6 +76,9 @@
     #header {
         display: none;
     }
+    .nav-container .mobile-menu ul li a {
+        font-size: 0.8rem;
+    }
     .top-effect {
         position: absolute;
         top: -50px;
