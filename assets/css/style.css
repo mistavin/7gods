@@ -537,11 +537,6 @@ body.active {
     z-index: -1;
 }
 
-@media (min-width: 992px) {
-    .hero-title:before {
-        top: 2.8125rem;
-    }
-}
 
 .hero .hero-text {
     width: 55%;
@@ -956,7 +951,6 @@ body.active {
 }
 
 .roadmap .item .content ul {
-    /* list-style: circle !important; */
     text-decoration: dotted;
     margin: 0;
     padding: 0 8px;
