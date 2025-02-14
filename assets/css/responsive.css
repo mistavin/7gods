@@ -422,7 +422,7 @@
     .footer ul li a {
         display: flex;
         font-size: 13px;
-        padding: 6px 15px;
+        padding: 6px 5px;
         text-transform: uppercase;
     }
 }
