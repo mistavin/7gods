@@ -323,7 +323,7 @@
 
     .roadmap .item .column {
         width: 46.5%;
-        height: 196px;
+        height: 170px;
         flex: 0 0 auto;
         margin: 0 0 10px 10px;
     }
@@ -359,8 +359,7 @@
     }
 
     .buy-token .img-phone img {
-        margin-top: 0;
-        margin-right: 0;
+        margin: 0;
     }
 
     .buy-token .item .content {
@@ -761,8 +760,7 @@
     }
 
     .buy-token .img-phone img {
-        margin-top: 0;
-        margin-right: 0;
+        margin: 0;
     }
 
     .buy-token .item .content {
@@ -833,7 +831,7 @@
 
 }
 
-/* @media screen and (min-width: 992px) and (max-width: 1280px) { */
+/* Desktop (1024px - 1440px) */
 @media (min-width: 1024px) and (max-width: 1440px) {
     .hero .hero-title {
         font-size: 3.5rem;
@@ -894,4 +892,6 @@
     .roadmap .water {
         bottom: -40px;
     }
+
+    
 }
