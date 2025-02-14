@@ -945,9 +945,8 @@ body.active {
     color: #6AEB5E;
     font-family: 'Inter';
     font-weight: 700;
-    /* margin-bottom: 3rem; */
     height: 43px;
-    margin: 1.3rem 0 0.4rem;
+    margin: 1.3rem 0 0.5rem;
 }
 
 .roadmap .item .content ul {
