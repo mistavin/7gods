@@ -358,8 +358,8 @@
 
     }
 
-    .buy-token .img-phone img {
-        margin: 0;
+    .buy-token .img-phone {
+        margin-right: 0;
     }
 
     .buy-token .item .content {
@@ -759,8 +759,8 @@
 
     }
 
-    .buy-token .img-phone img {
-        margin: 0;
+    .buy-token .img-phone {
+        margin-right: 0;
     }
 
     .buy-token .item .content {
@@ -892,4 +892,7 @@
     .roadmap .water {
         bottom: -40px;
     }
+    /* .buy-token .img-phone {
+        margin-right: -30%;
+    } */
 }

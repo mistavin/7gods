@@ -1005,9 +1005,9 @@ body.active {
     line-height: 25px;
 }
 
-/* .buy-token .img-phone {
-   
-} */
+.buy-token .img-phone {
+    margin-right: -35%;
+}
 
 .buy-token .img-phone img {
     /* height: 500px; */
@@ -1015,7 +1015,7 @@ body.active {
     z-index: 2;
     object-fit: cover;
     /* margin-top: -80px; */
-    margin-right: -20%;
+   
     overflow: hidden;
 }
 
