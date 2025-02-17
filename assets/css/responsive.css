@@ -409,8 +409,9 @@
     }
 
     .footer ul li {
-        white-space: nowrap;
+        /* white-space: nowrap; */
         padding: 0;
+        text-align: center;
     }
 
 
@@ -425,7 +426,9 @@
         display: flex;
         font-size: 13px;
         padding: 6px 5px;
+        align-items: center;
         text-transform: uppercase;
+       justify-content: center;
     }
 }
 
