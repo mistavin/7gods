@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
-    <script src='https://terminal.jup.ag/main-v3.js' data-preload defer></script>
+    <script src="https://terminal.jup.ag/main-v3.js" data-preload defer></script>
 
 
     <title>7gods</title>
@@ -23,8 +23,28 @@
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
+    <!-- <div id="preloder">
         <div class="loader"></div>
+    </div> -->
+
+    <div id="preloader">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+            </div>
+        </div>
+        <div class="questions-area text-center">
+            <p>7gods</p>
+            
+            <ul>
+                <li> Create a wallet</li>
+                <li>Get some SOL</li>
+                <li>Go to Jupiter</li>
+                <li>Swap for $7gods.</li>
+            </ul>
+        </div>
     </div>
 
     <!-- =========== NAVIGATION SECTION ========== -->
@@ -65,10 +85,10 @@
                 </div>
 
                 <div class="icon-links">
-                    <a href=""><img src="assets/images/coins.png" alt="coins"></a>
-                    <a href=""><img src="assets/images/twitter.png" alt="twitter"></a>
-                    <a href=""><img src="assets/images/telegram.png" alt="telegram"></a>
-                    <a href=""><img src="assets/images/dex-screener.png" alt="dex-screener"></a>
+                    <a target="_blank" href=""><img src="assets/images/coins.png" alt="coins"></a>
+                    <a target="_blank" href="https://x.com/7Gods_On_Sol"><img src="assets/images/twitter.png" alt="twitter"></a>
+                    <a target="_blank" href="https://t.me/Seven_Gods_Token"><img src="assets/images/telegram.png" alt="telegram"></a>
+                    <a target="_blank" href=""><img src="assets/images/dex-screener.png" alt="dex-screener"></a>
                 </div>
 
                 <div class="menu-toggle">
@@ -127,7 +147,7 @@
         <div class="copyToClip">
             <div class="w-full flex justify-center">
                 <div class="relative w-full  max-w-[600px]">
-                    <input id="npm-install-copy-text" type="text" class="bg-[#0202026B] text-white text-xs md:text-sm rounded-lg block w-full px-4 pr-16 py-1.5 text-center" value="CA: Fe3sEB1cAt4TsETqmaopPQBto5o8TsY2W2NTw6H9pump" disabled readonly>
+                    <input id="npm-install-copy-text" type="text" class="bg-[#0202026B] text-white text-xs md:text-sm rounded-lg block w-full px-4 pr-16 py-1.5 text-center" value="" disabled readonly>
 
                     <button data-copy-to-clipboard-target="npm-install-copy-text" class="absolute right-2 top-1/2 -translate-y-1/2 text-white rounded-lg py-1 px-3 bg-[#5F5033]">
                         <span id="default-message" class="text-xs md:font-semibold">Copy</span>
@@ -493,10 +513,19 @@
         </ul>
 
         <div class="flex gap-4 items-center">
-            <img src="assets/images/coins.png" class="w-9 h-7" alt="coins">
-            <img src="assets/images/twitter.png" class="w-7 h-5 object-fill" alt="twitter">
-            <img src="assets/images/telegram.png" class="w-8 h-5 object-fill" alt="telegram">
-            <img src="assets/images/dex-screener.png" class="w-8 h-6 object-fill" alt="dex-screener">
+           
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/coins.png" class="w-9 h-7" alt="coins">
+            </a>
+            <a href="https://x.com/7Gods_On_Sol" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/twitter.png" class="w-7 h-5 object-fill" alt="twitter">
+            </a>
+            <a href="https://t.me/Seven_Gods_Token" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/telegram.png" class="w-8 h-5 object-fill" alt="telegram">
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/dex-screener.png" class="w-8 h-6 object-fill" alt="dex-screener">
+            </a>
         </div>
 
         <div class="copyright">
@@ -563,29 +592,29 @@
 
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const mobileMenu = document.querySelector(".mobile-menu");
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const mobileMenu = document.querySelector(".mobile-menu");
 
-        // Function to toggle the menu
-        menuToggle.addEventListener("click", (e) => {
-            e.stopPropagation(); // Prevent the event from propagating to the document
-            mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
-        });
+            // Function to toggle the menu
+            menuToggle.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent the event from propagating to the document
+                mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+            });
 
-        // Function to hide the menu when clicking outside
-        document.addEventListener("click", (e) => {
-            if (
-                mobileMenu.style.display === "block" && 
-                !mobileMenu.contains(e.target) && 
-                !menuToggle.contains(e.target)
-            ) {
-                mobileMenu.style.display = "none";
-            }
+            // Function to hide the menu when clicking outside
+            document.addEventListener("click", (e) => {
+                if (
+                    mobileMenu.style.display === "block" &&
+                    !mobileMenu.contains(e.target) &&
+                    !menuToggle.contains(e.target)
+                ) {
+                    mobileMenu.style.display = "none";
+                }
+            });
         });
-    });
-</script>
+    </script>
 
 
 </body>

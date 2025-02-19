@@ -322,8 +322,8 @@
     }
 
     .roadmap .item .column {
-        width: 46.5%;
-        height: 11.5rem;
+        width: 46.7%;
+        height: 11.9rem;
         flex: 0 0 auto;
         margin: 0 0 10px 10px;
     }
@@ -336,6 +336,7 @@
     .roadmap .item .content h2 {
         font-size: 0.6rem;
         height: 23px;
+        margin: 0.8rem 0 0.5rem;
     }
 
     .roadmap .item .content ul li {
