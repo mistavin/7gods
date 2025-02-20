@@ -1,5 +1,5 @@
-(function ($) {
-    'use strict';
+(function() {
+    "use strict";
 
     var $window = $(window);
 
@@ -140,14 +140,14 @@
     /*------------------
          Preloader
      --------------------*/
-    //   $(window).on('load', function () {
-    //     // $(".loader").fadeOut();
-    //     $("#preloader-active").delay(200).fadeOut("slow");
-    //   });
+      $(window).on('load', function () {
+        // $(".loader").fadeOut();
+        $("#preloader-active").delay(200).fadeOut("slow");
+      });
      // Page loading
     //  $(window).on("load", function () {
     //     $("#preloader-active").delay(450).fadeOut("slow");
         
     // });
 
-})(jQuery);
+})()
